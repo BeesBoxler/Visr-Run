@@ -1,4 +1,1 @@
-<<<<<<< .mine
-testname3|600000,testname5|500000,testname4|400000,testname6|300000,testname2|200000,testname1|100000,Your Name|71,Benjamin|62,Your Name|61,llllllllllllllll|48,Your Name|44,aaaaaaaa|34,Ben|34,Your Name|0,lallalala|0,yiming|0,Your Name|0,Your Name|0,||||||| .r22
-testname3|600000,testname5|500000,testname4|400000,testname6|300000,testname2|200000,testname1|100000,llllllllllllllll|48,aaaaaaaa|34,lallalala|0,yiming|0,=======
-testname3|600000,testname5|500000,testname4|400000,testname6|300000,testname2|200000,testname1|100000,564546|100,llllllllllllllll|48,aaaaaaaa|34,yiming|0,lallalala|0,>>>>>>> .r25
+Ben is great|1000,

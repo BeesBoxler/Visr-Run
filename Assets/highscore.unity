@@ -1223,6 +1223,7 @@ MonoBehaviour:
   scoreText: {fileID: 2052499205}
   listboard: {fileID: 125193329}
   inputField: {fileID: 2045633635}
+  confirmButton: {fileID: 726930108}
 --- !u!1 &1104953083
 GameObject:
   m_ObjectHideFlags: 0

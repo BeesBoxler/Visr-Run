@@ -13,6 +13,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
     public TMP_Text scoreText;
     public TMP_Text listboard;
     public TMP_InputField inputField;
+    public Button confirmButton;
     List<Record> record;
     Record newRecord;
 
@@ -102,7 +103,8 @@ public class HighscoreBehaviourScript : MonoBehaviour {
     public void confirmName()
     {
         newRecord.name = inputField.text;
-        Destroy(inputField);
+        inputField.gameObject.SetActive(false);
+        confirmButton.gameObject.SetActive(false);
         printList();
     }
 
