@@ -17,6 +17,8 @@ public class HighscoreBehaviourScript : MonoBehaviour {
     List<Record> record;
     Record newRecord;
 
+    private static String namePlaceholder = "Your name";
+
 
     
 
@@ -26,8 +28,11 @@ public class HighscoreBehaviourScript : MonoBehaviour {
             StreamWriter sw = new StreamWriter(path, false);
             foreach(Record r in record)
             {
-                sw.Write(r.name+"|"+r.score+",");
+            if (r.name != namePlaceholder)
+            {
+                sw.Write(r.name + "|" + r.score + ",");
                 Debug.Log("item added");
+            }
             }
             sw.Close();
 
@@ -72,7 +77,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
             }
             sr.Close();
 
-        newRecord = new Record("Your Name", score);
+        newRecord = new Record(namePlaceholder, score);
         record.Add(newRecord);
 
         record.Sort((x, y) => y.score.CompareTo(x.score));
