@@ -15,12 +15,11 @@ public class HighscoreBehaviourScript : MonoBehaviour {
 
 
         int score = StaticScoreClass.ScoreInformation;
-        Debug.Log("your score is "+score);
+        Debug.Log("Score is "+score);
         record = new List<Record>();
 
-        scoreText = GetComponent("scoreText") as Text;
+
         scoreText.text = score.ToString();
-        listboard = GetComponent("listText") as Text;
 
 
 
