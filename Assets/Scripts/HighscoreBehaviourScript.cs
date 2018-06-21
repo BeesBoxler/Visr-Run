@@ -18,10 +18,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
         Debug.Log("Score is "+score);
         record = new List<Record>();
 
-
         scoreText.text = score.ToString();
-
-
 
         string path = "Assets/record.txt";
         if (!System.IO.File.Exists(path))
@@ -51,7 +48,12 @@ public class HighscoreBehaviourScript : MonoBehaviour {
             }
             sr.Close();
 
-	}
+        Record newRecord = new Record("%pending%", score);
+        record.Add(newRecord);
+
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
