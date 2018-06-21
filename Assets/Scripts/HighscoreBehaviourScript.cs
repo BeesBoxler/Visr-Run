@@ -5,11 +5,32 @@ using System.IO;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+
 public class HighscoreBehaviourScript : MonoBehaviour {
     // Use this for initialization
     public Text scoreText;
     public Text listboard;
+    public InputField inputField;
     List<Record> record;
+    Record newRecord;
+
+
+    
+
+    private void saveTofile()
+    {
+        string path = "Assets/record.txt";
+            StreamWriter sw = new StreamWriter(path, false);
+            foreach(Record r in record)
+            {
+                sw.Write(r.name+"|"+r.score+",");
+                Debug.Log("item added");
+            }
+            sw.Close();
+
+    }
+
     void Start () {
 
 
@@ -25,12 +46,12 @@ public class HighscoreBehaviourScript : MonoBehaviour {
         {
             Debug.Log("not found record.txt, create new file");
             StreamWriter sw = new StreamWriter(path, true);
-            sw.WriteLine("test1|100000,");
-            sw.WriteLine("test2|200000,");
-            sw.WriteLine("test3|300000,");
-            sw.WriteLine("test4|400000,");
-            sw.WriteLine("test5|500000,");
-            sw.WriteLine("test6|600000,");
+            sw.Write("testname1|100000,");
+            sw.Write("testname2|200000,");
+            sw.Write("testname3|600000,");
+            sw.Write("testname4|400000,");
+            sw.Write("testname5|500000,");
+            sw.Write("testname6|300000,");
             sw.Close();
 
         }
@@ -48,8 +69,13 @@ public class HighscoreBehaviourScript : MonoBehaviour {
             }
             sr.Close();
 
-        Record newRecord = new Record("%pending%", score);
+        newRecord = new Record("Your Name", score);
         record.Add(newRecord);
+
+        record.Sort((x, y) => y.score.CompareTo(x.score));
+
+
+        printList();
 
 
 
@@ -59,16 +85,52 @@ public class HighscoreBehaviourScript : MonoBehaviour {
 	void Update () {
 		
 	}
-    public void print()
+
+    public void gotoPlayScene()
     {
-        foreach(Record r in record)
-        {
-            Debug.Log(r.ToString());
-        }
+        saveTofile();
+        SceneManager.LoadScene("RunnerScene", LoadSceneMode.Single);
+    }
+    public void gotoMenuyScene()
+    {
+        saveTofile();
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+    }
+
+    public void confirmName()
+    {
+        newRecord.name = inputField.text;
+        printList();
+    }
+
+    public void Quitgame()
+    {
+        saveTofile();
+        Application.Quit();
     }
 
 
+    public void printList()
+    {
+        string listtext = "";
+        int rank = 0;
+        foreach (Record r in record)
+        {
+            rank++;
+            listtext = listtext + rank + "," + r.name + "|" + r.score + "\r\n";
+
+        }
+        listboard.text = listtext;
+    }
+
+
+
+
 }
+
+
+
+
 public class Record
 {
     public string name;
@@ -84,3 +146,4 @@ public class Record
     }
 
 }
+
