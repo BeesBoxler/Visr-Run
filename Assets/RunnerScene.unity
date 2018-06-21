@@ -998,7 +998,7 @@ Prefab:
     - target: {fileID: 114766680176419402, guid: b0556fa5f7a78a24c8e717c792a11202,
         type: 2}
       propertyPath: damageImmuneTime
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114766680176419402, guid: b0556fa5f7a78a24c8e717c792a11202,
         type: 2}

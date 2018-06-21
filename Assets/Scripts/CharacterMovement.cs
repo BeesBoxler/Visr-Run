@@ -91,7 +91,7 @@ public class CharacterMovement : MonoBehaviour {
         if (damageImmune == false)
         {
             health = health - 1;
-            Debug.Log("taken damage");
+            Debug.Log("taken damage health left - " + health);
             if (health == 0)
             {
                 Debug.Log("game over");
@@ -100,13 +100,18 @@ public class CharacterMovement : MonoBehaviour {
             else
             {
                 Debug.Log("immune to damage");
+
                 Color original = renderer.material.color;
                 original.a = 0.5f;
-                renderer.material.color = original; 
+                //renderer.material.color = original;
+                renderer.material.color = Color.blue;
+                damageImmune = true;
+
                 yield return new WaitForSeconds(damageImmuneTime);
                 original.a = 1f;
                 renderer.material.color = original;
                 Debug.Log("no longer immune to damage");
+                damageImmune = false;
             }
         }
     }

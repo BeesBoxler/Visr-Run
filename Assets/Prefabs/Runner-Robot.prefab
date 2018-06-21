@@ -439,11 +439,11 @@ MonoBehaviour:
   test: {fileID: 0}
   speed: 4
   jumpSpeed: 250
-  health: 1
-  damageImmuneTime: 0
+  health: 3
+  damageImmuneTime: 1
   myaudioSource: {fileID: 0}
   clip: {fileID: 0}
-  renderer: {fileID: 0}
+  renderer: {fileID: 137137005031230898}
 --- !u!136 &136510862570291460
 CapsuleCollider:
   m_ObjectHideFlags: 1
