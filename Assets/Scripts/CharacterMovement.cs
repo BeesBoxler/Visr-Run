@@ -97,7 +97,7 @@ public class CharacterMovement : MonoBehaviour {
             {
                 Debug.Log("game over");
                 Time.timeScale = 0f;
-                SceneManager.LoadScene("HighScoreScene", LoadSceneMode.Single);
+                SceneManager.LoadScene("highscore", LoadSceneMode.Single);
                 yield return new WaitForSeconds(0);
                 
             }

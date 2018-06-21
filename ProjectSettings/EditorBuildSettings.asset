@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RunnerScene.unity
     guid: 47e22f5b34ee25740b9d0f721eb10472
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/highscore.unity
-    guid: 945850c721e286e4db3d9d1fb06ca007
+    guid: 2685a93ef8658db4784f46f87b85c0ca
