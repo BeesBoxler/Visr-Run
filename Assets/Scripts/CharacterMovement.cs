@@ -27,7 +27,7 @@ public class CharacterMovement : MonoBehaviour {
     void Start () {
 
         animatorComponent = gameObject.GetComponent<Animator>();
-        myaudioSource = GetComponent<AudioSource>();
+//myaudioSource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
