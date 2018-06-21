@@ -87,7 +87,7 @@ public class CharacterMovement : MonoBehaviour {
         }
     }
 
-    public IEnumerator takeDamage()
+    public IEnumerator takeDamage(GameObject other)
     {
         if (damageImmune == false)
         {

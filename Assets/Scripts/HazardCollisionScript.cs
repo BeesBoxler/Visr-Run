@@ -8,7 +8,10 @@ public class HazardCollisionScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            StartCoroutine (other.gameObject.GetComponent<CharacterMovement>().takeDamage());
+            StartCoroutine (other.gameObject.GetComponent<CharacterMovement>().takeDamage(this.gameObject));
+            Renderer render;
+            render = gameObject.GetComponent(typeof(Renderer)) as Renderer;
+            render.enabled = false;
         }
     }
 }
