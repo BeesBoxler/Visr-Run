@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54094210198401600}
   - component: {fileID: 114051137641081194}
   - component: {fileID: 114937795858905732}
+  - component: {fileID: 108051698985288846}
   m_Layer: 0
   m_Name: Hazard_2
   m_TagString: Hazard
@@ -113,6 +114,42 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6066921, y: 0.73008204, z: 0.6298275}
   m_Center: {x: 0.034703612, y: -0.0038559437, z: 0.18508625}
+--- !u!108 &108051698985288846
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499455813536210}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 0.893636, g: 0.36672795, b: 0.97794116, a: 1}
+  m_Intensity: 1.74
+  m_Range: 10.73
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.302
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114051137641081194
 MonoBehaviour:
   m_ObjectHideFlags: 1
