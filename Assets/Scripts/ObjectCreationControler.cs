@@ -9,7 +9,7 @@ public class ObjectCreationControler : MonoBehaviour
     public Vector3 spawnValue;
     public float spawnWait;
     public float startWait;
-
+    const float minSpawnWait = 0.2f;
     
     private void Start()
     {
@@ -25,6 +25,10 @@ public class ObjectCreationControler : MonoBehaviour
         {
             float timer = spawnWait;
             spawnWait = timer - Time.deltaTime * 10 / 75;
+            if (spawnWait < minSpawnWait)
+            {
+                spawnWait = minSpawnWait;
+            }
             Quaternion spawnRotation = Quaternion.identity;
 
             float y_add = y_range[Random.Range(0, 3)];
