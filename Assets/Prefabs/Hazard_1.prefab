@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114392661686538642}
   m_Layer: 0
   m_Name: Hazard_1
-  m_TagString: Untagged
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1499455813536210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: -4.71}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.3876903, y: 0.028518945, z: -2.849148}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ad6de053ee527de40ad74e8d415fd907, type: 2}
+  - {fileID: 2100000, guid: 4c451c661ab962c4a86225dcaaba2a6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +85,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1499455813536210}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 003d2366b7bbd904fa59fdf1ac365508, type: 3}
 --- !u!54 &54094210198401600
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -111,8 +111,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.73530686, y: 0.6452513, z: 0.896718}
+  m_Center: {x: -0.07836312, y: -0.015423775, z: 0.3063929}
 --- !u!114 &114051137641081194
 MonoBehaviour:
   m_ObjectHideFlags: 1
