@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour {
 
@@ -95,7 +96,9 @@ public class CharacterMovement : MonoBehaviour {
             if (health == 0)
             {
                 Debug.Log("game over");
+                SceneManager.LoadScene("HighScoreScene", LoadSceneMode.Single);
                 yield return new WaitForSeconds(0);
+                
             }
             else
             {

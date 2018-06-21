@@ -10,7 +10,6 @@ public class TextBoxUpdater : MonoBehaviour {
 
     private void Start()
     {
-
         distance = 0;
         text = this.GetComponent("Text") as Text;
     }
