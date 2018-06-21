@@ -37,9 +37,7 @@ public class CharacterMovement : MonoBehaviour {
         float jump = Input.GetAxis("Jump");
 
         if (jump == 1 && !inAir)
-        {
-            Debug.Log("Jump");
-       
+        {       
             animatorComponent.speed = 0.8f;
             animatorComponent.SetTrigger("OnJump"); //the jump animation
 
@@ -83,7 +81,6 @@ public class CharacterMovement : MonoBehaviour {
     {
         if (c.gameObject.tag == "Ground") {
             inAir = false;
-            Debug.Log("Hot ground");
         }
     }
 

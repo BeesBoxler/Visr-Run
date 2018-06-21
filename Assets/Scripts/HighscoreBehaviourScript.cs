@@ -5,13 +5,14 @@ using System.IO;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class HighscoreBehaviourScript : MonoBehaviour {
     // Use this for initialization
-    public Text scoreText;
-    public Text listboard;
-    public InputField inputField;
+    public TMP_Text scoreText;
+    public TMP_Text listboard;
+    public TMP_InputField inputField;
     List<Record> record;
     Record newRecord;
 
@@ -33,13 +34,14 @@ public class HighscoreBehaviourScript : MonoBehaviour {
 
     void Start () {
 
+        Time.timeScale = 1f;
 
 
         int score = StaticScoreClass.ScoreInformation;
         Debug.Log("Score is "+score);
         record = new List<Record>();
 
-        scoreText.text = score.ToString();
+        scoreText.text = "Your Score: " + score.ToString();
 
         string path = "Assets/record.txt";
         if (!System.IO.File.Exists(path))
@@ -100,6 +102,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
     public void confirmName()
     {
         newRecord.name = inputField.text;
+        Destroy(inputField);
         printList();
     }
 
