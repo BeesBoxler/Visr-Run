@@ -35,7 +35,6 @@ public class HighscoreBehaviourScript : MonoBehaviour {
             }
             }
             System.IO.File.WriteAllText(path,temp);
-
     }
 
     void Start () {
