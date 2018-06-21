@@ -13,3 +13,8 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit();
 	}
 }
+
+public static class StaticScoreClass
+{
+    public static int ScoreInformation { get; set; }
+}
