@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TextBoxUpdater : MonoBehaviour {
-    private Text text;
+    private TMP_Text text;
     private int distance;
 
     private void Start()
     {
         distance = 0;
-        text = this.GetComponent("Text") as Text;
+        text = gameObject.GetComponent<TMP_Text>();
     }
 
     void FixedUpdate ()

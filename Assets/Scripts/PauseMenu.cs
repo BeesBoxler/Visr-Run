@@ -7,12 +7,14 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject pauseMenu;
     public static bool isPaused = false;
+    float escPrev;
 
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        float esc = Input.GetAxis("Cancel");
+        if (esc == 1 && esc != escPrev)
         {
-
+            Debug.Log("Bloop");
             if (isPaused)
             {
                 ResumeGame();
@@ -21,6 +23,8 @@ public class PauseMenu : MonoBehaviour {
                 PauseGame();
             }
         }
+
+        escPrev = esc;
     }
 
 
