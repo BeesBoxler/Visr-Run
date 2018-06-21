@@ -559,11 +559,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: GameJameRunner
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\Yiming.Zhou\Documents\SVN\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 8062f4067d28d501
   metroApplicationDescription: GameJameRunner
   wsaImages: {}
   metroTileShortName: 

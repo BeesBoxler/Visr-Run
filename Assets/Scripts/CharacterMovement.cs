@@ -91,10 +91,10 @@ public class CharacterMovement : MonoBehaviour {
         if (damageImmune == false)
         {
             health = health - 1;
-            Debug.Log("taken damage health left - " + health);
+            //Debug.Log("taken damage health left - " + health);
             if (health <= 0)
             {
-                Debug.Log("game over");
+                //Debug.Log("game over");
                 Time.timeScale = 0f;
                 SceneManager.LoadScene("highscore", LoadSceneMode.Single);
                 yield return new WaitForSeconds(0);
@@ -102,7 +102,7 @@ public class CharacterMovement : MonoBehaviour {
             }
             else
             {
-                Debug.Log("now immune to damage");
+                //Debug.Log("now immune to damage");
 
                 Color original = renderer.material.color;
                 //renderer.material.color = original;
@@ -111,7 +111,7 @@ public class CharacterMovement : MonoBehaviour {
 
                 yield return new WaitForSeconds(damageImmuneTime);
                 renderer.material.color = original;
-                Debug.Log("no longer immune to damage");
+                //Debug.Log("no longer immune to damage");
                 damageImmune = false;
             }
         }

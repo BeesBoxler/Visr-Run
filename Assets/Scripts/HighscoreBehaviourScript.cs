@@ -25,16 +25,16 @@ public class HighscoreBehaviourScript : MonoBehaviour {
     private void saveTofile()
     {
         string path = "Assets/record.txt";
-            StreamWriter sw = new StreamWriter(path, false);
-            foreach(Record r in record)
+        string temp="";
+        foreach (Record r in record)
             {
             if (r.name != namePlaceholder)
             {
-                sw.Write(r.name + "|" + r.score + ",");
+                temp +=r.name + "|" + r.score + ",";
                 Debug.Log("item added");
             }
             }
-            sw.Close();
+            System.IO.File.WriteAllText(path,temp);
 
     }
 
@@ -53,29 +53,22 @@ public class HighscoreBehaviourScript : MonoBehaviour {
         if (!System.IO.File.Exists(path))
         {
             Debug.Log("not found record.txt, create new file");
-            StreamWriter sw = new StreamWriter(path, true);
-            sw.Write("testname1|100000,");
-            sw.Write("testname2|200000,");
-            sw.Write("testname3|600000,");
-            sw.Write("testname4|400000,");
-            sw.Write("testname5|500000,");
-            sw.Write("testname6|300000,");
-            sw.Close();
+            string temp = "";
+            System.IO.File.WriteAllText(path,temp);
+
 
         }
 
-            StreamReader sr = new StreamReader(path);
-            string allline =sr.ReadToEnd();
-            string[] lines = allline.Split(',');
+            string allLines = System.IO.File.ReadAllText(path);
+            string[] lines = allLines.Split(',');
             foreach(string line in lines)
             {
-            if (line.Length>2)
-            {
-                string[] thisline = line.Split('|');
-                record.Add(new Record(thisline[0], Int32.Parse(thisline[1])));
+                if (line.Length>2)
+                {
+                    string[] thisline = line.Split('|');
+                 record.Add(new Record(thisline[0], Int32.Parse(thisline[1])));
+              }
             }
-            }
-            sr.Close();
 
         newRecord = new Record(namePlaceholder, score);
         record.Add(newRecord);
