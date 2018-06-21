@@ -12,7 +12,7 @@ public class CharacterMovement : MonoBehaviour {
     public float jumpSpeed = 250;
     public int health = 1;
     //public float damageImmuneLength = 2;
-    private bool damageImmune = false;
+    public bool damageImmune = false;
     public float damageImmuneTime;
     bool skidding = false;
     public AudioSource myaudioSource;
@@ -55,7 +55,7 @@ public class CharacterMovement : MonoBehaviour {
 
         } else if (vertical < 0)
         {
-            Debug.Log("Duck!"); 
+            //Debug.Log("Duck!"); 
 
             if (skidding != true)
             {
@@ -81,6 +81,8 @@ public class CharacterMovement : MonoBehaviour {
     {
         if (c.gameObject.tag == "Ground") {
             inAir = false;
+            player.velocity = Vector3.zero;
+            player.angularVelocity = Vector3.zero;
         }
     }
 
@@ -90,7 +92,7 @@ public class CharacterMovement : MonoBehaviour {
         {
             health = health - 1;
             Debug.Log("taken damage health left - " + health);
-            if (health == 0)
+            if (health <= 0)
             {
                 Debug.Log("game over");
                 Time.timeScale = 0f;
@@ -100,16 +102,14 @@ public class CharacterMovement : MonoBehaviour {
             }
             else
             {
-                Debug.Log("immune to damage");
+                Debug.Log("now immune to damage");
 
                 Color original = renderer.material.color;
-                original.a = 0.5f;
                 //renderer.material.color = original;
                 renderer.material.color = Color.blue;
                 damageImmune = true;
 
                 yield return new WaitForSeconds(damageImmuneTime);
-                original.a = 1f;
                 renderer.material.color = original;
                 Debug.Log("no longer immune to damage");
                 damageImmune = false;
