@@ -18,8 +18,8 @@ public class ObjectCreationControler : MonoBehaviour
 
     private IEnumerator SpawnWaves()
     {
-        float[] y_range = { 0, 1,-0.5f};
-        float[] x_range = { 0,1,2,3,-1,-2,-3};
+        float[] y_range = { 0, 1.4f,2};
+        float[] x_range = { 0,1.3f,2.6f,-1.3f,-2.6f};
         yield return new WaitForSeconds(startWait);
         while (true)
         {
@@ -32,7 +32,7 @@ public class ObjectCreationControler : MonoBehaviour
             Quaternion spawnRotation = Quaternion.identity;
 
             float y_add = y_range[Random.Range(0, 3)];
-            float x_add = x_range[Random.Range(0, 7)];
+            float x_add = x_range[Random.Range(0, 5)]; 
 
             Vector3 newposition = new Vector3(spawnValue.x + x_add, spawnValue.y+ y_add, spawnValue.z);
 

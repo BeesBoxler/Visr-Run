@@ -803,7 +803,7 @@ MonoBehaviour:
   hazard: {fileID: 1499455813536210, guid: 3650002d6f2a8d74786fa208bf9ccd44, type: 2}
   hazard_2: {fileID: 1499455813536210, guid: c0f56c84b2071804885a66d3434b324b, type: 2}
   spawnValue: {x: 0, y: 0.1, z: 9.08}
-  spawnWait: 0.4
+  spawnWait: 0.7
   startWait: 0.5
 --- !u!4 &377770331
 Transform:
@@ -1190,7 +1190,7 @@ Prefab:
     - target: {fileID: 114766680176419402, guid: b0556fa5f7a78a24c8e717c792a11202,
         type: 2}
       propertyPath: health
-      value: 3
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114766680176419402, guid: b0556fa5f7a78a24c8e717c792a11202,
         type: 2}
