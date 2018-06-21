@@ -115,5 +115,9 @@ public class CharacterMovement : MonoBehaviour {
                 damageImmune = false;
             }
         }
+        else
+        {
+            yield return new WaitForSeconds(0);
+        }
     }
 }

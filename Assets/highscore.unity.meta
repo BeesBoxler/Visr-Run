@@ -1,6 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< .mine
+guid: c8b5af02f8bff5145bda4090aaa361f3
+timeCreated: 1529586630
+||||||| .r20
+guid: b593f0b34a52a50428338696abb0236d
+timeCreated: 1529580953
+=======
 guid: 945850c721e286e4db3d9d1fb06ca007
 timeCreated: 1529580761
+>>>>>>> .r24
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

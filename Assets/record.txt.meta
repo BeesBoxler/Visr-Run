@@ -1,6 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< .mine
+guid: 9872cbe464cce1143bb8396ed9dce101
+timeCreated: 1529586673
+||||||| .r20
+guid: bac946ae9c70b334581f344f69a297df
+timeCreated: 1529580957
+=======
 guid: fceea91f304e42a49b035cd61748608c
 timeCreated: 1529600468
+>>>>>>> .r24
 licenseType: Free
 TextScriptImporter:
   externalObjects: {}

@@ -1,6 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< .mine
+guid: 5be5bd334d124b74fb24fac18fc3a24d
+timeCreated: 1529586661
+||||||| .r20
+guid: 2fd01c3e3738c444196c73b4b4ccc95f
+timeCreated: 1529580957
+=======
 guid: 685422b0d9a53bb43a15c19ad37cd535
 timeCreated: 1529580764
+>>>>>>> .r24
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

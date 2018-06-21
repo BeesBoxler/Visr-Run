@@ -1,6 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< .mine
+guid: 78f8f7e74c92a6a4b95cd4947d42e152
+timeCreated: 1529593377
+||||||| .r46
+guid: 5f23c2690f0a7ce459c2dcf877c41c67
+timeCreated: 1529596170
+=======
 guid: f3031847ae87f794abd603e32e3afb51
 timeCreated: 1529593510
+>>>>>>> .r47
 licenseType: Free
 AudioImporter:
   externalObjects: {}
