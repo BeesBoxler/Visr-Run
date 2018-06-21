@@ -96,6 +96,7 @@ public class CharacterMovement : MonoBehaviour {
             if (health == 0)
             {
                 Debug.Log("game over");
+                Time.timeScale = 0f;
                 SceneManager.LoadScene("HighScoreScene", LoadSceneMode.Single);
                 yield return new WaitForSeconds(0);
                 

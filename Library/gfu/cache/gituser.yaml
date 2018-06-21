@@ -12,19 +12,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 7
-<<<<<<< .mine
-  lastUpdatedAtString: 2018-06-21T12:10:30.311+01:00
-  initializedAtString: 2018-06-21T12:10:30.311+01:00
-  gitName: ryanmoir
-  gitEmail: RyanMoir98@gmail.com
-||||||| .r1
-  lastUpdatedAtString: 0001-01-01T00:00:00.000+00:00
-  initializedAtString: 0001-01-01T00:00:00.000+00:00
+  lastUpdatedAtString: 2018-06-21T12:46:57.845+01:00
+  initializedAtString: 2018-06-21T12:36:49.598+01:00
   gitName: 
-  gitEmail: 
-=======
-  lastUpdatedAtString: 2018-06-21T12:15:00.872+01:00
-  initializedAtString: 2018-06-21T12:15:00.865+01:00
-  gitName: YImingzhou9
-  gitEmail: Yimingzhou9@gmail.com
->>>>>>> .r3
+  gitEmail: benjaminboxler@gmail.com
