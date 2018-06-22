@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33024626236877680}
   - component: {fileID: 64529390714904266}
   - component: {fileID: 23316900501591852}
-  - component: {fileID: 114031612789065804}
   m_Layer: 0
   m_Name: LNear
   m_TagString: Untagged
@@ -75,7 +74,6 @@ GameObject:
   - component: {fileID: 33526703933804020}
   - component: {fileID: 64078968170592552}
   - component: {fileID: 23421536928518710}
-  - component: {fileID: 114755360042536372}
   m_Layer: 0
   m_Name: RNear
   m_TagString: Untagged
@@ -391,18 +389,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114031612789065804
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1260390434194944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4f9cd26d9ef5944b83718dd66d0377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.2
 --- !u!114 &114480453529554086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -427,15 +413,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -0.1
---- !u!114 &114755360042536372
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1512035900296892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4f9cd26d9ef5944b83718dd66d0377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: -0.2

@@ -12,6 +12,17 @@ public class MainMenu : MonoBehaviour {
 	public void QuitGame () {
 		Application.Quit();
 	}
+
+    private void FixedUpdate()
+    {
+
+        if (Input.anyKey)
+        {
+            PlayGame();
+        }
+
+
+    }
 }
 
 public static class StaticScoreClass

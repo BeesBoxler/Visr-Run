@@ -11,6 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RunnerScene.unity
     guid: 47e22f5b34ee25740b9d0f721eb10472
+<<<<<<< .mine
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/highscore.unity
     guid: c8b5af02f8bff5145bda4090aaa361f3
+||||||| .r27
+=======
+  - enabled: 1
+    path: Assets/highscore.unity
+    guid: c8b5af02f8bff5145bda4090aaa361f3
+>>>>>>> .r63

@@ -26,21 +26,21 @@ public class PauseMenu : MonoBehaviour {
 
         escPrev = esc;
 
-        //if (input.getkeydown("joystick button 0"))
-        //{
-        //    //a
-        //    resumegame();
-        //}
-        //else if (input.getkeydown("joystick button 1"))
-        //{
-        //    //b
-        //    showmenu();
-        //}
-        //else if (input.getkeydown("joystick button 2"))
-        //{
-        //    //y
-        //    quitgame();
-        //}
+        if (Input.GetKeyDown("joystick button 0"))
+        {
+            //a
+            ResumeGame();
+        }
+        else if (Input.GetKeyDown("joystick button 1"))
+        {
+            //b
+            ShowMenu();
+        }
+        else if (Input.GetKeyDown("joystick button 2"))
+        {
+            //y
+            QuitGame();
+        }
     }
 
 
