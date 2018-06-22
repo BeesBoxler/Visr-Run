@@ -88,12 +88,12 @@ public class HighscoreBehaviourScript : MonoBehaviour {
         bool btn2 = Input.GetKey("joystick button 3");
         if (btn0)
         {
-            Debug.Log("button 1 pressed, go to play scene");
+            Debug.Log("button 0 pressed, go to play scene");
             gotoPlayScene();
         }
         if (btn1)
         {
-            Debug.Log("button 0 pressed, go to menu scene");
+            Debug.Log("button 1 pressed, go to menu scene");
             gotoMenuScene();
         }
         if (btn2)
