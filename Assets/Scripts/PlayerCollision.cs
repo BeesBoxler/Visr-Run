@@ -8,7 +8,6 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-
         }
     }
 }

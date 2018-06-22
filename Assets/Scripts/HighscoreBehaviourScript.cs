@@ -83,15 +83,32 @@ public class HighscoreBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        bool btn0 = Input.GetKey("joystick button 1");
+        bool btn1 = Input.GetKey("joystick button 0");
+        bool btn2 = Input.GetKey("joystick button 3");
+        if (btn0)
+        {
+            Debug.Log("button 1 pressed, go to play scene");
+            gotoPlayScene();
+        }
+        if (btn1)
+        {
+            Debug.Log("button 0 pressed, go to menu scene");
+            gotoMenuScene();
+        }
+        if (btn2)
+        {
+            Debug.Log("button 3 pressed, quit");
+            Quitgame();
+        }
+    }
 
     public void gotoPlayScene()
     {
         saveTofile();
         SceneManager.LoadScene("RunnerScene", LoadSceneMode.Single);
     }
-    public void gotoMenuyScene()
+    public void gotoMenuScene()
     {
         saveTofile();
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
