@@ -25,6 +25,22 @@ public class PauseMenu : MonoBehaviour {
         }
 
         escPrev = esc;
+
+        if (Input.GetKeyDown("joystick button 0"))
+        {
+            //a
+            ResumeGame();
+        }
+        else if (Input.GetKeyDown("joystick button 1"))
+        {
+            //b
+            ShowMenu();
+        }
+        else if (Input.GetKeyDown("joystick button 2"))
+        {
+            //y
+            QuitGame();
+        }
     }
 
 

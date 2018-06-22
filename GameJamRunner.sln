@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamRunner", "GameJamRunner.csproj", "{02F11D0E-D440-6D75-44DF-604FDBF966D3}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamRunner.Plugins", "GameJamRunner.Plugins.csproj", "{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamRunner", "GameJamRunner.csproj", "{02F11D0E-D440-6D75-44DF-604FDBF966D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamRunner.Editor", "GameJamRunner.Editor.csproj", "{2207097D-88EE-2938-8ED6-5D712EF7C115}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02F11D0E-D440-6D75-44DF-604FDBF966D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02F11D0E-D440-6D75-44DF-604FDBF966D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02F11D0E-D440-6D75-44DF-604FDBF966D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02F11D0E-D440-6D75-44DF-604FDBF966D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9F43B2-B46F-68DD-EB8C-03D6CB285A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2207097D-88EE-2938-8ED6-5D712EF7C115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2207097D-88EE-2938-8ED6-5D712EF7C115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2207097D-88EE-2938-8ED6-5D712EF7C115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2207097D-88EE-2938-8ED6-5D712EF7C115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
