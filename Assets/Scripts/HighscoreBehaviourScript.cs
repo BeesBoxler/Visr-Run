@@ -12,8 +12,8 @@ public class HighscoreBehaviourScript : MonoBehaviour {
     // Use this for initialization
     public TMP_Text scoreText;
     public TMP_Text listboard;
-    public TMP_InputField inputField;
-    public Button confirmButton;
+    //public TMP_InputField inputField;
+    //public Button confirmButton;
     List<Record> record;
     Record newRecord;
 
@@ -30,7 +30,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
             {
             if (r.name != namePlaceholder)
             {
-                temp +=r.name + "|" + r.score + ",";
+                temp += r.name + "|"+ r.score + ",";//
                 Debug.Log("item added");
             }
             }
@@ -69,7 +69,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
               }
             }
 
-        newRecord = new Record(namePlaceholder, score);
+        newRecord = new Record("name", score);
         record.Add(newRecord);
 
         record.Sort((x, y) => y.score.CompareTo(x.score));
@@ -88,19 +88,17 @@ public class HighscoreBehaviourScript : MonoBehaviour {
         bool btn2 = Input.GetKey("joystick button 3");
         if (btn0)
         {
-            Debug.Log("button 0 pressed, go to play scene");
             gotoPlayScene();
         }
         if (btn1)
         {
-            Debug.Log("button 1 pressed, go to menu scene");
             gotoMenuScene();
         }
         if (btn2)
         {
-            Debug.Log("button 3 pressed, quit");
             Quitgame();
         }
+
     }
 
     public void gotoPlayScene()
@@ -116,10 +114,10 @@ public class HighscoreBehaviourScript : MonoBehaviour {
 
     public void confirmName()
     {
-        newRecord.name = inputField.text;
-        inputField.gameObject.SetActive(false);
-        confirmButton.gameObject.SetActive(false);
-        printList();
+        //newRecord.name = inputField.text;
+        //inputField.gameObject.SetActive(false);
+        //confirmButton.gameObject.SetActive(false);
+        //printList();
     }
 
     public void Quitgame()
@@ -136,7 +134,7 @@ public class HighscoreBehaviourScript : MonoBehaviour {
         foreach (Record r in record)
         {
             rank++;
-            listtext = listtext + rank + "," + r.name + "|" + r.score + "\r\n";
+            listtext = listtext +"rank "+rank + ","+ r.score + "\r\n";// + r.name + "|" 
 
         }
         listboard.text = listtext;
